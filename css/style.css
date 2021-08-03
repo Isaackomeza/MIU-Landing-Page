@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{  
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;  
+    padding: 0;  
+    border: 0;  
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    font-size: 100%;  
+    font: inherit;  
+    vertical-align: baseline; 
+    font-size: 1.4em;
+ }
+
+ .header-wrapper{
+     height: 100%;
+     background: linear-gradient(#DFECFF, #DFECFF);
+     position: relative;
+     border-radius: 0 0 70% 30%/0 0 20% 10em;
+ }
+ .logo{
+     width: 15%;
+     margin: 1em;
+ }
+ .page-header{
+     background: linear-gradient(#ffff, #A6DCFE,#A6DCFE,#A6DCFE);
+     height: 25rem;
+     border-bottom-right-radius: 10em;
+ }
+ .header-intro{
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     top: 8em;
+     left: 10%;
+     background-image: linear-gradient(to top left,#a5cdf0,#f4edff), url('./images/city.jpg');
+     width: 80%;
+     border-radius: 5% 20% 5% 40%/ 5% 70rem 5% 60rem;
+ }
+ .date{
+     border-left: 5px solid #6167F3;
+     padding-left: 1em;
+ }
+ .header-title{
+     font-size: 2em;
+     color: #FE3579;
+     font-weight: bolder !important;
+ }
+ .date{
+     line-height: 15px;
+     font-weight: bold;
+ }
+ .intro-img{
+     width: 30%;
+ }
+ .message{
+     margin: 20%;
+ }
+ .message-title{
+     font-weight: bold;
+ }
+ .message-summary{
+     margin-top: 3em;
+ }
+ .message-summary .summary-title{
+     font-weight: bolder;
+     font-size: 1.5rem;
+ }
+ .summary-body{
+     display: grid;
+     grid-template-columns: 30% 30% 30%;
+     gap: 3em;
+     text-align: center;
+     font-weight: bold;
+ }
+ .message-footer{
+     background: linear-gradient(to top, #3a79ff 30%, #ab3afe);
+     position: absolute;
+     bottom: -3rem;
+     width: 100%;
+     height: 20em;
+     z-index: -1;
+ }
+ .design{
+     border-radius: 0 0 50% 0;
+     height: 20em;
+     width: 100%;
+     position: absolute;
+     top: 2em;
+ }
+
+
+ .about{
+    background: linear-gradient(to left, #8107FF, #AF58FD);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-top: -11em;
+}
+
+.miu{
+    display: flex;
+    background: linear-gradient(#E8F1FA, #ffffff);
+    background-color: #E8F1FA;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+.miu h1{
+    color: #FF7D43
+}
+
+.text{
+    padding: 50px;
+    width: 50%;  
+    
+}
+.text h1{
+    font-size: 1.5em;
+}
+.bubble{
+    position: absolute;
+    right: -120px;
+    top: -280px;
+}
+
+.portfolio{
+    display: flex;
+    background: linear-gradient(#E8F1FA, #ffffff);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    opacity: 0.8;
+    
+}
+.portfolio:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(-2deg);
+    z-index: -1;
+}
+
+.apply{
+    background: linear-gradient(#E8F1FA, #ffffff);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    opacity: 0.8;
+}
+.apply:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(-3deg);
+    z-index: -1;
+    border-top-right-radius:20%;
+}
+
+.portfolio img{
+    padding: 5em;
+}
+.footer{
+    background: linear-gradient(to right, #8107FF, #AF58FD);
+    text-align: center;
+    padding-top: 4em;
+    border-radius: 80% 40% 0 0;
+    color: #ffffff;
+    margin-bottom: -2em;
+}
+
+
+
+@media screen and (max-width: 1144px) {
+    .header-title {
+      font-size: 2em;
+    }
+    .design {
+        top: 3.5em;
+        border-radius: 0 0 60% 0;
+      }
+    .message{
+        margin: 13% 15%;
+    }
+    .about{
+        margin-top: -4em;
+    }
+  }
+
+@media screen and (max-width: 792px) {
+    .design {
+      top: 4em;
+    }
+    .message{
+        margin: 16% 15%;
+    }
+    .header-intro{
+        top: 6em;
+    }
+  }
+  @media screen and (max-width: 473px) {
+      body{
+          font-size: 00.8em;
+      }
+      .header-title{
+          font-size: 1em;
+      }
+      .page-header{
+        height: 15rem;
+        border-bottom-right-radius: 5em;
+        
+      }
+      .date{
+        font-size: 0.8em;
+      }
+      .header-intro{
+          top: 4em;
+      }
+    .design {
+      top: -1em;
+    }
+    .message{
+        margin: 20% 15%;
+    }
+    .summary-body{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .miu{
+        display: flex;
+        flex-direction: column;
+    }
+    .portfolio{
+        display: block;
+    }
+    .apply{
+        display: block;
+    }
+    .footer{
+        margin-top: 20em;
+    }
+    .text{
+        font-size: 1em;
+    }
+  }
+  @media screen and (max-width: 344px) {
+    .design {
+        top: 3em;
+      }
+      .header-title{
+        font-size: 1.5em;
+    }
+}
